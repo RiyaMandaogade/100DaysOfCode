@@ -42,35 +42,13 @@ Every solution, every mistake, every breakthrough — documented here.
 
 ---
 
-## 📂 Repository Structure
-100-Days-of-Code/
-│
-├── Day001/
-│   ├── solution.java       # Main solution file
-│   └── notes.md            # What I learned today
-│
-├── Day002/
-│   ├── solution.java
-│   └── notes.md
-│
-├── Day003/
-│   ├── solution.java
-│   └── notes.md
-│
-└── README.md               # You are here!
-
----
-
 ## 📅 Progress Log
 
 | Day | Date | Topic | Problem | Platform | Status |
 |-----|------|-------|---------|----------|--------|
-| 001 | DD/MM/YYYY | Arrays | Two Sum | Codeforces | ✅ |
-| 002 | DD/MM/YYYY | Strings | Reverse String | Codeforces | ✅ |
-| 003 | DD/MM/YYYY | Math | The Equalizer | Codeforces | ✅ |
-| 004 | DD/MM/YYYY | | | | 🔄 |
-| ... | ... | ... | ... | ... | ... |
-| 100 | DD/MM/YYYY | | | | ⏳ |
+| 001 | 13/04/2026 | Math | Theatre Square | Codeforces | ✅ |
+| 002 | 14/04/2026 | Strings | Stones on the Table | Codeforces | ✅ |
+| 003 | 15/04/2026 | Game Theory | The Equalizer | Codeforces | ✅ |
 
 **Status Key:**
 - ✅ Completed
@@ -85,7 +63,7 @@ Days Completed  : 003 / 100
 Current Streak  : 3 days 🔥
 Problems Solved : 3
 Longest Streak  : 3 days
-Started On      : DD/MM/YYYY
+Started On      : 13/04/2026
 Expected End    : DD/MM/YYYY
 
 ---
@@ -108,18 +86,6 @@ Expected End    : DD/MM/YYYY
 - Greedy Algorithms
 - Stack & Queue
 - Linked Lists
-
----
-
-## 💡 Key Learnings & Takeaways
-
-### Week 1
-- Learned how to approach game theory problems using parity (odd/even logic)
-- Understood the importance of reading problem constraints carefully
-- Discovered that using `BufferedReader` is faster than `Scanner` in Java for competitive programming
-
-### Week 2
-*(To be updated...)*
 
 ---
 
