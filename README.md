@@ -6,7 +6,7 @@
 > *"The secret of getting ahead is getting started."* — Mark Twain
 
 ## 👋 About Me
-Hi! I'm [Your Name], a passionate programmer on a mission to become a better problem solver
+Hi! I'm Riya Prashant Mandaogade, a passionate programmer on a mission to become a better problem solver
 and software developer. I'm currently learning Data Structures, Algorithms, and Competitive
 Programming through daily practice.
 
@@ -133,9 +133,9 @@ Expected End    : DD/MM/YYYY
 ---
 
 ## 🔗 Connect With Me
-- **Codeforces:** [your handle](https://codeforces.com/profile/yourhandle)
-- **GitHub:** [your profile](https://github.com/yourusername)
-- **LinkedIn:** [your name](https://linkedin.com/in/yourname)
+- **Codeforces:** [https://codeforces.com/profile/RiyaMandaogade](https://codeforces.com/profile/yourhandle)
+- **GitHub:** [https://github.com/RiyaMandaogade](https://github.com/yourusername)
+- **LinkedIn:** [https://www.linkedin.com/in/riya-prashant-mandaogade-177a492a7/](https://linkedin.com/in/yourname)
 
 ---
 
@@ -166,7 +166,7 @@ If you're a fellow learner and want to use this as inspiration:
 
 ### ⭐ If this repo motivates you, consider giving it a star! ⭐
 
-*Started: [Your Start Date] | Goal: 100 Days of Consistent Coding*
+*Started: [13/04/2026] | Goal: 100 Days of Consistent Coding*
 
 ![Progress](https://progress-bar.dev/3/?title=Progress&width=400&color=00d4aa)
 
