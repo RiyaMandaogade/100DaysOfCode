@@ -1,3 +1,4 @@
+// DAY 002 — Stones on the Table (Codeforces 266A)
 import java.util.*;
 import java.io.*;
 
