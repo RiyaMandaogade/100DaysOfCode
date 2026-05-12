@@ -36,7 +36,7 @@ Every solution, every mistake, every breakthrough — documented here.
 
 ## 🛠️ Tech Stack
 - **Language:** Java 21 (64-bit)
-- **Platform:** Codeforces, LeetCode
+- **Platform:** Codeforces
 - **Editor:** VS Code / IntelliJ IDEA
 - **Version Control:** Git & GitHub
 
@@ -49,6 +49,16 @@ Every solution, every mistake, every breakthrough — documented here.
 | 001 | 13/04/2026 | Math | Theatre Square | Codeforces | ✅ |
 | 002 | 14/04/2026 | Strings | Stones on the Table | Codeforces | ✅ |
 | 003 | 15/04/2026 | Game Theory | The Equalizer | Codeforces | ✅ |
+| 004 | 16/04/2026 | Sorting/Greedy | Blocked | Codeforces | ✅ |
+| 005 | 17/04/2026 | Greedy/Simulation | Course Wishes | Codeforces | ✅ |
+| 006 | 18/04/2026 | Greedy/Simulation | 1-1 | Codeforces | ✅ |
+| 007 | 19/04/2026 | Greedy/Sorting | Flip Flops | Codeforces | ✅ |
+| 008 | 20/04/2026 | Greedy/Math | THU Packing Puzzle | Codeforces | ✅ |
+| 009 | 21/04/2026 | Math/Greedy | Be Positive | Codeforces | ✅ |
+| 010 | 22/04/2026 | Math/MEX | MEX Partition | Codeforces | ✅ |
+| 011 | 05/05/2026 | Simulation/Brute Force | Eating Game | Codeforces | ✅ |
+| 012 | 11/05/2026 | Math/Greedy | Social Experiment | Codeforces | ✅ |
+| 013 | 12/05/2026 | Brute Force/Arrays | Prefix Max | Codeforces | ✅ |
 
 **Status Key:**
 - ✅ Completed
@@ -59,38 +69,42 @@ Every solution, every mistake, every breakthrough — documented here.
 ---
 
 ## 📊 Stats So Far
-Days Completed  : 003 / 100
-Current Streak  : 3 days 🔥
-Problems Solved : 3
-Longest Streak  : 3 days
+Days Completed  : 013 / 100
+Current Streak  : 2 days 🔥
+Problems Solved : 13
+Longest Streak  : 10 days
 Started On      : 13/04/2026
-Expected End    : DD/MM/YYYY
+Expected End    : 21/07/2026
 
 ---
 
 ## 📚 Topics Covered
 
 ### ✅ Completed
-- Arrays & Loops
-- Basic Math & Number Theory
+- Math & Number Theory
 - String Manipulation
+- Game Theory & Parity
+- Sorting & Greedy
+- Simulation & Brute Force
+- MEX Problems
+- Prefix Maximum
+- Circular Table Problems
 
 ### 🔄 In Progress
-- Sorting & Searching
+- Binary Search
 - Recursion & Backtracking
 
 ### ⏳ Upcoming
 - Dynamic Programming
 - Graphs & Trees
-- Binary Search
-- Greedy Algorithms
 - Stack & Queue
 - Linked Lists
+- Segment Trees
 
 ---
 
 ## 🏆 Milestones
-- [ ] 🌱 Day 010 — 10 days streak!
+- [x] 🌱 Day 010 — 10 days streak! ✅
 - [ ] 🌿 Day 025 — 25 problems solved!
 - [ ] 🌳 Day 050 — Halfway there!
 - [ ] 🔥 Day 075 — Almost done!
@@ -98,10 +112,36 @@ Expected End    : DD/MM/YYYY
 
 ---
 
+## 💡 Key Learnings So Far
+
+### Week 1 (Days 1–7)
+- Ceiling division without Math.ceil(): `(n + a - 1) / a`
+- Always use `long` for large number multiplication to avoid overflow
+- String comparison in Java must use `.equals()` not `==`
+- `BufferedReader` is significantly faster than `Scanner` for Codeforces
+- Game theory problems often reduce to simple odd/even (parity) logic
+- Greedy sort ascending is the classic snowball strategy for combat problems
+- Simulation problems just need the right ORDER of operations
+
+### Week 2 (Days 8–10)
+- H/T/U shape packing: T+U=4 rows, T+H=5 rows, T+T=5 rows, singles=3 rows
+- For product sign: count negatives — even count = positive product
+- MEX of any valid partition always equals MEX of the entire array
+
+### Week 3+ (Days 11–13)
+- Circular table = modulo arithmetic: next = (current + 1) % n
+- Small constraints (n ≤ 10) always signal brute force simulation
+- For team split problems: n=2 and n=3 are special cases; n≥4 follows parity rule
+- O(n³) brute force with n=50 = only 125,000 ops — always fast enough
+- Swap-and-swap-back pattern keeps brute force code clean without array copies
+- "At most one swap" always includes the zero-swap case
+
+---
+
 ## 🔗 Connect With Me
-- **Codeforces:** [https://codeforces.com/profile/RiyaMandaogade](https://codeforces.com/profile/yourhandle)
-- **GitHub:** [https://github.com/RiyaMandaogade](https://github.com/yourusername)
-- **LinkedIn:** [https://www.linkedin.com/in/riya-prashant-mandaogade-177a492a7/](https://linkedin.com/in/yourname)
+- **Codeforces:** [RiyaMandaogade](https://codeforces.com/profile/RiyaMandaogade)
+- **GitHub:** [RiyaMandaogade](https://github.com/RiyaMandaogade)
+- **LinkedIn:** [Riya Prashant Mandaogade](https://www.linkedin.com/in/riya-prashant-mandaogade-177a492a7/)
 
 ---
 
@@ -132,8 +172,8 @@ If you're a fellow learner and want to use this as inspiration:
 
 ### ⭐ If this repo motivates you, consider giving it a star! ⭐
 
-*Started: [13/04/2026] | Goal: 100 Days of Consistent Coding*
+*Started: 13/04/2026 | Goal: 100 Days of Consistent Coding*
 
-![Progress](https://progress-bar.dev/3/?title=Progress&width=400&color=00d4aa)
+![Progress](https://progress-bar.dev/13/?title=Progress&width=400&color=00d4aa)
 
 </div>
