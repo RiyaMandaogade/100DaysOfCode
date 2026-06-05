@@ -2,67 +2,45 @@ import java.util.*;
 import java.io.*;
 
 public class Main {
-    static final long INF = (long) 2e18;
-
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine().trim());
         StringBuilder sb = new StringBuilder();
 
         while (t-- > 0) {
-            int n = Integer.parseInt(br.readLine().trim());
-            int[] a = new int[n];
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            for (int i = 0; i < n; i++) a[i] = Integer.parseInt(st.nextToken());
+            String s = br.readLine().trim();
+            int n = s.length();
 
-            long[] lo = {1L, 1L};
-            long[] hi = {INF, INF};
-            boolean[] valid = {true, true};
+            // Step 1: count 4s (must all be removed)
+            int fours = 0;
+            for (int i = 0; i < n; i++) if (s.charAt(i) == '4') fours++;
 
-            for (int i = 1; i < n; i++) {
-                long[] newLo = {Long.MAX_VALUE, Long.MAX_VALUE};
-                long[] newHi = {-1L, -1L};
-                boolean[] newValid = {false, false};
-
-                for (int lp = 0; lp <= 1; lp++) {
-                    if (!valid[lp]) continue;
-                    for (int ln = 0; ln <= 1; ln++) {
-                        long cLo = lo[lp], cHi = hi[lp];
-                        boolean ok = true;
-
-                        if (lp == 0 && ln == 0) {
-                            if (a[i-1] > a[i]) ok = false;
-                        } else if (lp == 0 && ln == 1) {
-                            cLo = Math.max(cLo, (long) a[i-1] - a[i]);
-                        } else if (lp == 1 && ln == 0) {
-                            long ub = (long) a[i] - a[i-1];
-                            if (ub < 1) ok = false;
-                            else cHi = Math.min(cHi, ub);
-                        } else {
-                            if (a[i-1] > a[i]) ok = false;
-                        }
-
-                        if (!ok || cLo > cHi) continue;
-
-                        if (!newValid[ln]) {
-                            newValid[ln] = true;
-                            newLo[ln] = cLo;
-                            newHi[ln] = cHi;
-                        } else {
-                            newLo[ln] = Math.min(newLo[ln], cLo);
-                            newHi[ln] = Math.max(newHi[ln], cHi);
-                        }
-                    }
-                }
-                lo = newLo; hi = newHi; valid = newValid;
+            // Step 2: build array without 4s
+            int m = n - fours;
+            int[] arr = new int[m];
+            int idx = 0;
+            for (int i = 0; i < n; i++) {
+                char c = s.charAt(i);
+                if (c != '4') arr[idx++] = c - '0';
             }
 
-            boolean ans = false;
-            for (int l = 0; l <= 1; l++) {
-                if (valid[l] && lo[l] <= hi[l]) { ans = true; break; }
+            // Step 3: precompute suffix count of 2s
+            int[] suffix2 = new int[m + 1];
+            for (int i = m - 1; i >= 0; i--) {
+                suffix2[i] = suffix2[i + 1] + (arr[i] == 2 ? 1 : 0);
             }
-            sb.append(ans ? "Yes" : "No").append('\n');
+
+            // Step 4: sweep cut point, minimize prefix {1,3} + suffix 2s
+            int minCost = Integer.MAX_VALUE;
+            int prefix13 = 0;
+            for (int i = 0; i <= m; i++) {
+                minCost = Math.min(minCost, prefix13 + suffix2[i]);
+                if (i < m && arr[i] != 2) prefix13++;
+            }
+
+            sb.append(fours + minCost).append('\n');
         }
+
         System.out.print(sb);
     }
 }
