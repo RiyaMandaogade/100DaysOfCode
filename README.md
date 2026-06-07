@@ -59,6 +59,12 @@ Every solution, every mistake, every breakthrough — documented here.
 | 011 | 05/05/2026 | Simulation/Brute Force | Eating Game | Codeforces | ✅ |
 | 012 | 11/05/2026 | Math/Greedy | Social Experiment | Codeforces | ✅ |
 | 013 | 12/05/2026 | Brute Force/Arrays | Prefix Max | Codeforces | ✅ |
+| 014 | 27/05/2026 | Construction/Math | Construct an Array | Codeforces | ✅ |
+| 015 | 28/05/2026 | Greedy/Math | Optimal Purchase | Codeforces | ✅ |
+| 016 | 03/06/2026 | DP/Greedy | Another Sorting Problem | Codeforces | ✅ |
+| 017 | 05/06/2026 | Greedy/Sweep | Digit String | Codeforces | ✅ |
+| 018 | 06/06/2026 | Greedy/Math | Absolute Cinema | Codeforces | ✅ |
+| 019 | 07/06/2026 | Strings/Observation | Party Monster | Codeforces | ✅ |
 
 **Status Key:**
 - ✅ Completed
@@ -69,9 +75,9 @@ Every solution, every mistake, every breakthrough — documented here.
 ---
 
 ## 📊 Stats So Far
-Days Completed  : 013 / 100
-Current Streak  : 2 days 🔥
-Problems Solved : 13
+Days Completed  : 019 / 100
+Current Streak  : 4 days 🔥
+Problems Solved : 19
 Longest Streak  : 10 days
 Started On      : 13/04/2026
 Expected End    : 21/07/2026
@@ -89,13 +95,17 @@ Expected End    : 21/07/2026
 - MEX Problems
 - Prefix Maximum
 - Circular Table Problems
+- Construction Problems
+- Dynamic Programming (intro)
+- Prefix/Suffix Sweep
+- Bracket Sequences
 
 ### 🔄 In Progress
 - Binary Search
 - Recursion & Backtracking
 
 ### ⏳ Upcoming
-- Dynamic Programming
+- Dynamic Programming (advanced)
 - Graphs & Trees
 - Stack & Queue
 - Linked Lists
@@ -128,13 +138,23 @@ Expected End    : 21/07/2026
 - For product sign: count negatives — even count = positive product
 - MEX of any valid partition always equals MEX of the entire array
 
-### Week 3+ (Days 11–13)
+### Week 3 (Days 11–13)
 - Circular table = modulo arithmetic: next = (current + 1) % n
 - Small constraints (n ≤ 10) always signal brute force simulation
 - For team split problems: n=2 and n=3 are special cases; n≥4 follows parity rule
 - O(n³) brute force with n=50 = only 125,000 ops — always fast enough
 - Swap-and-swap-back pattern keeps brute force code clean without array copies
 - "At most one swap" always includes the zero-swap case
+
+### Week 4+ (Days 14–19)
+- Construction: upper half `[n+1..2n]` forces all sums above 2n, preventing collisions
+- Group key problems: compare per-unit costs with exact remainder handling
+- DP with label states (0/1) + tracking lo/hi k-range for constraint problems
+- Multiples of 4 check: only "4" single digit and "12","24","32","44" pairs matter
+- Prefix/suffix sweep is the classic tool for optimal cut-point problems
+- For two-array swap problems: rewrite in terms of hi/lo pairs → sumHi + maxLo
+- Always consider extreme cases: removing the entire string = free rearrangement
+- Valid bracket sequence only needs: even length + equal counts of '(' and ')'
 
 ---
 
@@ -174,6 +194,8 @@ If you're a fellow learner and want to use this as inspiration:
 
 *Started: 13/04/2026 | Goal: 100 Days of Consistent Coding*
 
-![Progress](https://progress-bar.dev/13/?title=Progress&width=400&color=00d4aa)
+![Progress](https://progress-bar.dev/19/?title=Progress&width=400&color=00d4aa)
 
 </div>
+
+Update README - Day 019 complete, 19/100 done
